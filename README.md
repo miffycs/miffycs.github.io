@@ -19,4 +19,4 @@
 * [ ] Update Resume
 * [ ] Host Resume on GitHub
 * [ ] Update LinkedIn
-* [ ] Turn Resume from .pdf to .html
+* [X] ~~Write web-based version of Resume~~

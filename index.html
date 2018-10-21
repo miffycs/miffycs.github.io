@@ -7,6 +7,56 @@
     <title>Miffy Chen</title>
     <style>
 
+    html, body {
+        height:100%;
+        min-height: 100%;
+        font-family: "Noto Sans CJK TC Regular", "Noto Sans", sans-serif;
+    }
+    .container {
+        max-width: 500px;
+        background: #fff;
+        margin: 0px auto 0px;
+        box-shadow: 1px 1px 2px #DAD7D7;
+        border-radius: 3px;
+        padding: 40px;
+        margin-top: 50px;
+    }
+    .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: lightblue;
+    }
+    .nav li {
+        float: left;
+    }
+    .nav li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .nav .active {
+        background-color: lightblue;
+    }
+    .nav li a:hover {
+        background-color: white;
+        color: black;
+    }
+    .navicon {
+        width: 20px;
+        height: 20px;
+    }
+    h1 {
+        text-align: center;
+        font-weight: bold;
+    }
+    .directory {
+        margin: 0 20% 0;
+    }
+
     .subtitle {
         margin-top: 30px;
         margin-bottom: 10px;
@@ -29,24 +79,40 @@
 
 <body>
 
-    <h1 style="text-align:center">Miffy Chen: GitHub Page</h1>
+<div class="container">
 
-    <div class="subtitle">Directory:</div>
-        <img src="image/icon_github_30.png" class="icon" alt="GitHub">
-            <a href="https://github.com/miffycs/">GitHub profile</a></br>
-        <img src="image/icon_linkedin_30.png" class="icon" alt="LinkedIn">
-            <a href="https://www.linkedin.com/in/miffychen/">LinkedIn profile</a></br>
-        <img src="image/icon_resume_30.png" class="icon" alt="Resume">
-            <a href="https://miffycs.github.io/resume">Resume link</a></br>
+    <div class="nav">
+        <ul>
+            <li><a class="active" href="">=</a></li>
+            <li><a href="https://github.com/miffycs/"><img src="image/icon_github_30.png" class="navicon" alt="GitHub"></a></li>
+            <li><a href="https://www.linkedin.com/in/miffychen/"><img src="image/icon_linkedin_30.png" class="navicon" alt="LinkedIn"></a></li>
+            <li><a href="https://miffycs.github.io/resume.html"><img src="image/icon_resume_30.png" class="navicon" alt="Resume (web)"></a></li>
+        </ul>
+    </div>
 
+    <h1>Miffy Chen</h1>
 
-    <div class="subtitle">Progress:</div>
+    <div class="directory">
+        <div class="subtitle">Directory:</div>
+            <img src="image/icon_github_30.png" class="icon" alt="GitHub">
+                <a href="https://github.com/miffycs/">GitHub profile</a></br>
+            <img src="image/icon_linkedin_30.png" class="icon" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/miffychen/">LinkedIn profile</a></br>
+            <img src="image/icon_resume_30.png" class="icon" alt="Resume (web)">
+                <a href="https://miffycs.github.io/resume.html">Resume (web)</a></br>
+            <img src="image/icon_resume_30.png" class="icon" alt="Resume (download)">
+                <a href="https://miffycs.github.io/resume_preview.html">Resume (download)</a></br>
+    </div>
+
+    <!-- <div class="subtitle">Progress:</div>
         <label class="checkbox"><input type="checkbox" checked><s>Make GitHub Pages Repo</s></label></br>
         <label class="checkbox"><input type="checkbox" checked><s>Write an index page</s></label></br>
         <label class="checkbox"><input type="checkbox">Update Resume</label></br>
         <label class="checkbox"><input type="checkbox">Host Resume on GitHub</label></br>
         <label class="checkbox"><input type="checkbox">Update LinkedIn</label></br>
-        <label class="checkbox"><input type="checkbox">Turn Resume from .pdf to .html</label>
+        <label class="checkbox"><input type="checkbox">Turn Resume from .pdf to .html</label> -->
+
+</div>
 
 </body>
 
