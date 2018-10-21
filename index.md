@@ -3,25 +3,15 @@
 ---
 
 ### Directory:
-* [GitHub profile](https://github.com/miffycs/ "GitHub/miffycs")
-* [LinkedIn](https://www.linkedin.com/in/miffychen/ "LinkedIn")
-* [Resume](https://miffycs.github.io/resume "Resume")
-
-
-<!-- Works as README but not as jekyll -->
-* [![icon_github] Github profile][link_github]
-* [![icon_linkedin] Linkedin profile][link_linkedin]
-* [![icon_resume] Resume Link][link_resume]
-
-[icon_github]: https://github.com/miffycs/miffycs.github.io/blob/master/image/icon_github_30.png (GitHub/miffycs)
-[icon_linkedin]: https://github.com/miffycs/miffycs.github.io/blob/master/image/icon_linkedin_30.png (LinkedIn)
-[icon_resume]: https://github.com/miffycs/miffycs.github.io/blob/master/image/icon_resume_30.png (Resumeeee)
-
-[link_github]: https://github.com/miffycs/
-[link_linkedin]: https://www.linkedin.com/in/miffychen/
-[link_resume]: https://miffycs.github.io/resume
-
-
+* <a href="https://github.com/miffycs/">
+  <img src="https://github.com/miffycs/miffycs.github.io/blob/master/image/icon_github_30.png" alt="GitHub" width=20 height=20>
+  GitHub profile</a>
+* <a href="https://www.linkedin.com/in/miffychen/">
+  <img src="https://github.com/miffycs/miffycs.github.io/blob/master/image/icon_linkedin_30.png" alt="GitHub" width=20 height=20>
+  LinkedIn profile</a>
+* <a href="https://miffycs.github.io/resume">
+  <img src="https://github.com/miffycs/miffycs.github.io/blob/master/image/icon_resume_30.png" alt="GitHub" width=20 height=20>
+  Resume link</a>
 
 ### Progress:
 * [X] ~~Make GitHub Pages Repo~~
