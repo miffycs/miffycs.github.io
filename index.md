@@ -4,20 +4,13 @@
 
 ### Directory:
 
-[![GitHub profile][icon_github]][link_github]
+* [![icon_github] Github profile][link_github]
+* [![icon_linkedin] Linkedin profile][link_linkedin]
+* [![icon_resume] Resume Link][link_resume]
 
-[![LinkedIn profile][icon_linkedin]][link_linkedin]
-
-[![Resume link][icon_resume]][link_resume]
-
-
-* [GitHub profile](https://github.com/miffycs/ "GitHub/miffycs")
-* [LinkedIn](https://www.linkedin.com/in/miffychen/ "LinkedIn")
-* [Resume](https://miffycs.github.io/resume "Resume")
-
-[icon_github]: ../image/icon_github_30.png (GitHub/miffycs)
-[icon_linkedin]: /image/icon_linkedin_30.png (LinkedIn)
-[icon_resume]: /image/icon_resume_30.png (Resume)
+[icon_github]: https://github.com/miffycs/miffycs.github.io/blob/master/image/icon_github_30.png (GitHub/miffycs)
+[icon_linkedin]: https://github.com/miffycs/miffycs.github.io/blob/master/image/icon_linkedin_30.png (LinkedIn)
+[icon_resume]: https://github.com/miffycs/miffycs.github.io/blob/master/image/icon_resume_30.png (Resumeeee)
 
 [link_github]: https://github.com/miffycs/
 [link_linkedin]: https://www.linkedin.com/in/miffychen/
