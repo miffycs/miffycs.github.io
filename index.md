@@ -3,7 +3,12 @@
 ---
 
 ### Directory:
+* [GitHub profile](https://github.com/miffycs/ "GitHub/miffycs")
+* [LinkedIn](https://www.linkedin.com/in/miffychen/ "LinkedIn")
+* [Resume](https://miffycs.github.io/resume "Resume")
 
+
+<!-- Works as README but not as jekyll
 * [![icon_github] Github profile][link_github]
 * [![icon_linkedin] Linkedin profile][link_linkedin]
 * [![icon_resume] Resume Link][link_resume]
@@ -15,6 +20,7 @@
 [link_github]: https://github.com/miffycs/
 [link_linkedin]: https://www.linkedin.com/in/miffychen/
 [link_resume]: https://miffycs.github.io/resume
+-->
 
 
 ### Progress:
