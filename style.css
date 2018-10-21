@@ -137,13 +137,15 @@ body {
   margin-bottom: 20px;
 }
 .details .skills__item .left {
-  width: 28%;
-}
-.details .skills__item .midpad {
-  width: 5%;
+  width: 20%;
+  padding-right: -10px;
 }
 .details .skills__item .right {
-  width: 40%;
+  width: 35%;
+  padding-left: -20px;
+}
+.details .skills__item .left {
+  width: 32%;
 }
 .details .skills__item .name {
   font-weight: bold;
