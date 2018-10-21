@@ -3,9 +3,13 @@
 ---
 
 ### Directory:
+
 [![GitHub profile][icon_github]][link_github]
+
 [![LinkedIn profile][icon_linkedin]][link_linkedin]
+
 [![Resume link][icon_resume]][link_resume]
+
 
 * [GitHub profile](https://github.com/miffycs/ "GitHub/miffycs")
 * [LinkedIn](https://www.linkedin.com/in/miffychen/ "LinkedIn")
