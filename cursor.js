@@ -1,13 +1,13 @@
-// function play(a) {
-//     var b, c;
-//     m3u8 = urls[a], b = document.getElementById("video"), Hls.isSupported() ? (c = new Hls, c.loadSource(m3u8), c.attachMedia(b), c.on(Hls.Events.MANIFEST_PARSED, function () {
-//         b.play()
-//     })) : b.canPlayType("application/vnd.apple.mpegurl") && (b.src = m3u8, b.addEventListener("loadedmetadata", function () {
-//         b.play()
-//     }))
-// }
+function play(a) {
+    var b, c;
+    m3u8 = urls[a], b = document.getElementById("video"), Hls.isSupported() ? (c = new Hls, c.loadSource(m3u8), c.attachMedia(b), c.on(Hls.Events.MANIFEST_PARSED, function () {
+        b.play()
+    })) : b.canPlayType("application/vnd.apple.mpegurl") && (b.src = m3u8, b.addEventListener("loadedmetadata", function () {
+        b.play()
+    }))
+}
 
-// var rthost = window.location.host;
+var rthost = window.location.host;
 
 !function (a) {
     var b = /iPhone/i, c = /iPod/i, d = /iPad/i, e = /(?=.*\bAndroid\b)(?=.*\bMobile\b)/i, f = /Android/i,
