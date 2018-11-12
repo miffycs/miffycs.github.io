@@ -1,5 +1,5 @@
 # Miffy Chen: GitHub Page
-##### (Last updated: 2018/11/12)
+##### (Last updated: 2018/10/21)
 ---
 
 ### Directory:
@@ -22,5 +22,4 @@
 * [X] ~~Update Resume~~
 * [X] ~~Host Resume on GitHub & GDrive~~
 * [ ] Update LinkedIn
-* [X] ~~Write web-based Resume~~
-* [X] ~~Cursor animation~~
+* [X] ~~Write web-based version of Resume~~

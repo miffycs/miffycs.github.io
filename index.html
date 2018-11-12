@@ -2,29 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-
-    <link type="image/x-icon" rel="shortcut icon" href="image/favicon.ico">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
     <title>Miffy Chen</title>
-    <link type='text/css' rel='stylesheet' href="index.css">
+    <style>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127859393-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-127859393-1');
-    </script>
+    html, body {
+        height:100%;
+        min-height: 100%;
+        font-family: "Noto Sans CJK TC Regular", "Noto Sans", sans-serif;
+    }
+    .container {
+        max-width: 500px;
+        background: #fff;
+        margin: 0px auto 0px;
+        box-shadow: 1px 1px 2px #DAD7D7;
+        border-radius: 3px;
+        padding: 40px;
+        margin-top: 50px;
+    }
+    .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: lightblue;
+    }
+    .nav li {
+        float: left;
+    }
+    .nav li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .nav .active {
+        background-color: lightblue;
+    }
+    .nav li a:hover {
+        background-color: white;
+        color: black;
+    }
+    .navicon {
+        width: 20px;
+        height: 20px;
+    }
+    h1 {
+        text-align: center;
+        font-weight: bold;
+    }
+    .directory {
+        margin: 0 20% 0;
+    }
+
+    .subtitle {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 1.7em;
+        font-weight: bold;
+    }
+
+    .icon {
+        margin-left: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .checkbox {
+        margin-left: 20px;
+    }
+
+    </style>
 </head>
 
 <body>
-
-<script type="text/javascript" src="cursor.js"></script>
 
 <div class="container">
 
@@ -40,15 +93,15 @@
     <h1>Miffy Chen</h1>
 
     <div class="directory">
-        <div class="dir_title">Directory:</div>
-        <img src="image/icon_github_30.png" class="dir_icon" alt="GitHub">
-        <a href="https://github.com/miffycs/">GitHub profile</a></br>
-        <img src="image/icon_linkedin_30.png" class="dir_icon" alt="LinkedIn">
-        <a href="https://www.linkedin.com/in/miffychen/">LinkedIn profile</a></br>
-        <img src="image/icon_resume_30.png" class="dir_icon" alt="Resume (web)">
-        <a href="https://miffycs.github.io/resume.html">Resume (web)</a></br>
-        <img src="image/icon_resume_30.png" class="dir_icon" alt="Resume (download)">
-        <a href="https://miffycs.github.io/resume_preview.html">Resume (download)</a></br>
+        <div class="subtitle">Directory:</div>
+            <img src="image/icon_github_30.png" class="icon" alt="GitHub">
+                <a href="https://github.com/miffycs/">GitHub profile</a></br>
+            <img src="image/icon_linkedin_30.png" class="icon" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/miffychen/">LinkedIn profile</a></br>
+            <img src="image/icon_resume_30.png" class="icon" alt="Resume (web)">
+                <a href="https://miffycs.github.io/resume.html">Resume (web)</a></br>
+            <img src="image/icon_resume_30.png" class="icon" alt="Resume (download)">
+                <a href="https://miffycs.github.io/resume_preview.html">Resume (download)</a></br>
     </div>
 
     <!-- <div class="subtitle">Progress:</div>
@@ -57,17 +110,8 @@
         <label class="checkbox"><input type="checkbox">Update Resume</label></br>
         <label class="checkbox"><input type="checkbox">Host Resume on GitHub</label></br>
         <label class="checkbox"><input type="checkbox">Update LinkedIn</label></br>
-        <label class="checkbox"><input type="checkbox">Turn Resume from .pdf to .html
-    </label> -->
+        <label class="checkbox"><input type="checkbox">Turn Resume from .pdf to .html</label> -->
 
-    <div class="construction">
-        (under construction...)
-    </div>
-
-</div>
-
-<div class="last_updated">
-    Last updated: 2018/11/12
 </div>
 
 </body>
