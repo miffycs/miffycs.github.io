@@ -10,6 +10,12 @@ body {
     /* padding: 50px; */
 }
 
+h1 {
+    text-align: center;
+    font-weight: 600; /* bold = 700 */
+    text-shadow: 4px 4px 4px #eeeeee;
+}
+
 .container {
     max-width: 500px;
     background: #ffffff;
@@ -56,12 +62,6 @@ body {
 .navicon {
     width: 20px;
     height: 20px;
-}
-
-h1 {
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 4px 4px 4px #eeeeee;
 }
 
 .directory {

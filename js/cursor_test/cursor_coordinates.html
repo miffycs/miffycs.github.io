@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title>Display cursor coordinates</title>
+
+	<style>
+	html {
+
+	}
+	body {
+		text-align: center;
+	}
+	h1 {
+
+	}
+	.centered_absolute {
+		position: absolute;
+		top:  50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	</style>
+
+</head>
+
+<!-- Detection area = full-screen-->
+<body onmousemove="showCoords(event)">
+
+<!-- Detection area = contained to div, or p, or h1, etc-->
+<!-- div onmousemove="showCoords(event)"></div -->
+
+	<h1 style="text-align:center">
+		<br/>
+		<br/>
+		Move the mouse and see what happens!
+	</h1>
+
+	<h2>
+		<div class="centered_absolute" id="coords">
+			?
+		</div>
+	</h2>
+
+<!--
+	<script type="text/javascript">
+		function showCoords(event) {
+			var x = event.clientX;
+			var y = event.clientY;
+			var coords = "X coordinates: " + x + ", Y coordinates: " + y;
+			document.getElementById("coords").innerHTML = coords;
+		}
+	</script>
+-->
+
+<script type="text/javascript" src="cursor_coordinates.js"></script>
+<script type="text/javascript" src="../cursor_particles.js"></script>
+
+</body>
+
+</html>
