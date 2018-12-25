@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+.holder {
+    position: absolute;
+    background-color: #ffffff;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.new-year {
+    font-family: 'Major Mono Display', monospace;
+    color: #333333;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.year {
+    position: relative;
+    left: 50%;
+    display: table;
+    font-size: 6em;
+    transform: translateX(-50%);
+}
+
+.year2 {
+    transform: translateX(-50%) rotateX(180deg);
+    opacity: 0.2;
+}
+
+.digit {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    opacity: 0;
+}
+
+.controls {
+    margin-top: 30px;
+}
+
+.control {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.8em;
+    border-left: 1px solid #333333;
+    opacity: 0;
+    position: relative;
+    top: 100px;
+}
+
+.control:first-child {
+    border-left: none;
+}
+
+.triangles {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #333333;
+    position: absolute;
+    opacity: 0;
+}
