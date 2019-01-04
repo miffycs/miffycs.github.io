@@ -127,7 +127,7 @@ function initApp() {
             var uid = user.uid;
             var providerData = user.providerData;
             // [START_EXCLUDE]
-            document.getElementById('sign-in-status').textContent = '以登入';
+            document.getElementById('sign-in-status').textContent = '已登入';
             document.getElementById('sign-in').textContent = '登出';
             document.getElementById('account-details').textContent = JSON.stringify(user, null, '  ');
             if (!emailVerified) {
@@ -137,7 +137,7 @@ function initApp() {
         } else {
             // User is signed out.
             // [START_EXCLUDE]
-            document.getElementById('sign-in-status').textContent = '以登出';
+            document.getElementById('sign-in-status').textContent = '已登出';
             document.getElementById('sign-in').textContent = '登入';
             document.getElementById('account-details').textContent = 'null';
             // [END_EXCLUDE]
