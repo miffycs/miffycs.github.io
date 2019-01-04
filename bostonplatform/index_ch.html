@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Boston Platform</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-functions.js"></script>
+    <script type="text/javascript" src="js/firebase_init.js"></script>
+
+    <!-- email login -->
+    <script type="text/javascript" src="js/firebase_auth_email_ch.js"></script>
+
+    <!-- language_switch script -->
+    <script type="text/javascript" src="js/index.js"></script>
+
+</head>
+
+<body>
+
+    <button class="language_switch" value="index.html" onclick="redirect(this.value)">En / 中</button>
+
+    <div class="wrapper_ch">
+
+        <div class="top"></div>
+
+        <ul class="navigation">
+            <li><a href="" title="Home">首頁</a></li>
+            <li><a href="" title="Articles">文章</a>
+                <ul>
+                    <li><a href="" title="Info">食衣住行</a></li>
+                    <li><a href="" title="Sightseeing">景點介紹</a></li>
+                </ul>
+            </li>
+            <li><a href="" title="Course Hero">作業查找</a></li>
+            <li><a href="" title="BBS">論壇</a>
+                <ul>
+                    <li><a href="" title="Self Intro">自我介紹</a></li>
+                    <li><a href="" title="Rate">評比: 教授/課程</a></li>
+                    <li><a href="" title="Meetup">揪團</a></li>
+                </ul>
+            </li>
+            <li><a href="" title="About Us">關於我們</a></li>
+            <li><a href="" title="Contact Us">聯絡我們</a></li>
+            <li><a href="" title="Register">註冊帳號</a></li>
+            <li><a href="" title="Login Logout">登入/登出</a></li>
+            <div class="clear"></div>
+        </ul>
+
+        <div class="content">
+            <h1 class="content_title">Firebase Email &amp; Password Authentication</h1>
+            <p>請在下方輸入電子郵箱及密碼。登入已註冊的帳號，或是註冊一個新的帳號。</p>
+
+            <div class="input">
+                <input type="text" id="email" name="email" placeholder="電子郵箱" />
+                &nbsp;&nbsp;&nbsp;
+                <input type="password" id="password" name="password" placeholder="密碼" />
+            </div>
+
+            <div class="buttons">
+                <button disabled id="sign-in" name="signin">登入</button>
+                <button id="sign-up" name="signup">註冊</button>
+                <button disabled id="verify-email" name="verify-email">傳送確認郵件</button>
+                <button id="password-reset" name="verify-email">重設密碼</button>
+            </div>
+
+            <div class="user-details-container">
+                Firebase sign-in status: <span id="sign-in-status">Unknown</span>
+                <div>Firebase auth <code>currentUser</code> object value:</div>
+                <pre><code id="account-details">null</code></pre>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
