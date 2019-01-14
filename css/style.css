@@ -92,6 +92,12 @@ h1 {
     height: 20px;
 }
 
+.dir_des {
+    display: inline-block;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
 .checkbox {
     margin-left: 20px;
 }
