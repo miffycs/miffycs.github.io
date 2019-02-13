@@ -1,124 +1,250 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+
+<html>
 
 <head>
+	<!-- meta info -->
+	<meta name="author" content="Miffy Chen">
+	<meta name="description" content="Personal Portfolio">
+	<meta name="keywords" content="Miffy Chen, CS, Computer Science, Portfolio, Boston, software engineer, software, engineer, full-stack, full stack, web design, web developer, freelance, for hire">
+	<meta http-equiv="refresh" content="60">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- meta viewport behavior -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<!-- apple full-screen mode -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- apple style of status bar -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <!-- meta info -->
-    <meta name="author" content="Miffy Chen">
-    <meta name="description" content="Personal Portfolio">
-    <meta name="keywords" content="Miffy Chen, CS, Computer Science, Portfolio, Boston, software engineer, software, engineer, full-stack, full stack, web design, web developer, freelance, for hire">
-    <!-- meta http-equiv="refresh" content="30" (refresh every 30 seconds)-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- meta viewport behavior -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <!-- apple full-screen mode -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <!-- apple style of status bar -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="image/favicon.ico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="image/favicon.ico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="image/favicon.ico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="image/favicon.ico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="image/favicon.ico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="image/favicon.ico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="image/favicon.ico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="image/favicon.ico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="image/favicon.ico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="image/favicon.ico/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="image/favicon.ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="image/favicon.ico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="image/favicon.ico/favicon-16x16.png">
+	<link rel="manifest" href="image/favicon.ico/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="image/favicon.ico/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="image/favicon.ico/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="image/favicon.ico/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="image/favicon.ico/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="image/favicon.ico/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="image/favicon.ico/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="image/favicon.ico/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="image/favicon.ico/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="image/favicon.ico/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="image/favicon.ico/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="image/favicon.ico/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon.ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="image/favicon.ico/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon.ico/favicon-16x16.png">
-    <link rel="manifest" href="image/favicon.ico/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="image/favicon.ico/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+	<!-- Title -->
+	<title>
+		Miffy Chen ::: Software Engineer | Full-Stack Developer
+	</title>
 
-    <!-- Title -->
-    <title>
-        Miffy Chen ::: Software Engineer | Full-Stack Developer
-    </title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/avatarslides.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	 crossorigin="anonymous">
 
-    <!-- CSS -->
-    <link type='text/css' rel='stylesheet' href="css/style.css">
+	<!-- Global site tag (gtag.js) - Google Analytics :: https://analytics.google.com/ -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127859393-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-    <!-- Global site tag (gtag.js) - Google Analytics :: https://analytics.google.com/ -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127859393-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-127859393-1');
-    </script>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-127859393-1');
+	</script>
 
 </head>
 
+<body class="is-preload">
 
-<body>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-    <div class="container">
+		<!-- Main -->
+		<section id="main">
+			<header>
+				<span class="avatar">
+					<div class="slideshow-container">
+						<div class="mySlides fade"><img src="image/newindex/avatar2.png" style="max-width:122px"></div>
+						<div class="mySlides fade"><img src="image/newindex/avatarcat.png" style="max-width:122px"></div>
+						<div class="mySlides fade"><img src="image/newindex/avatargoogle.gif" style="max-width:122px"></div>
+						<div class="mySlides fade"><img src="image/newindex/avatar2.png" style="max-width:122px"></div>
+					</div>
+					<div style="text-align:center">
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+					</div>
+				</span>
+				<h1>Miffy Chen</h1>
+				<p>Software Engineer<br />Full-Stack Developer</p>
+			</header>
+			<!--
+						<hr />
+						<h2>Extra Stuff!</h2>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field">
+									<input type="text" name="name" id="name" placeholder="Name" />
+								</div>
+								<div class="field">
+									<input type="email" name="email" id="email" placeholder="Email" />
+								</div>
+								<div class="field">
+									<select name="department" id="department">
+										<option value="">Department</option>
+										<option value="op1">Option1</option>
+										<option value="op2">Option2</option>
+										<option value="null">/dev/null</option>
+									</select>
+								</div>
+								<div class="field">
+									<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+								</div>
+								<div class="field">
+									<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+								</div>
+								<div class="field">
+									<label>But are you a robot?</label>
+									<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
+									<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
+								</div>
+							</div>
+							<ul class="actions special">
+								<li><a href="#" class="button">Get Started</a></li>
+							</ul>
+						</form>
+						<hr />
+						-->
+			<footer>
+				<ul class="icons">
+					<li><a href="https://github.com/miffycs/" class="fa-github">GitHub</a></li>
+					<li><a href="https://codepen.io/miffychen/" class="fa-codepen">CodePen</a></li>
+					<li><a href="https://www.linkedin.com/in/miffychen/" class="fa-linkedin">LinkedIn</a></li>
+					<li><a href="https://miffychen.tech/resume_new.html" class="fa-file-alt">Resume</a></li>
+				</ul>
+			</footer>
+		</section>
 
-        <div class="nav">
-            <ul>
-                <li><a class="active" href="">&#9776;</a></li>
-                <li><a href="https://github.com/miffycs/"><img src="image/icon/github_30.png" class="navicon" alt="GitHub"></a></li>
-                <li><a href="https://codepen.io/miffychen/"><img src="image/icon/codepen.png" class="navicon" alt="Codepen"></a></li>
-                <li><a href="https://www.linkedin.com/in/miffychen/"><img src="image/icon/linkedin_30.png" class="navicon" alt="LinkedIn"></a></li>
-                <!-- <li><a href="https://miffycs.github.io/resume.html"><img src="image/icon/resume_30.png" class="navicon" alt="Resume (web)"></a></li>
-                <li><a href="https://miffycs.github.io/resume_preview.html"><img src="image/icon/download.png" class="navicon" alt="Resume (download)"></a></li> -->
-                <li><a href="https://miffycs.github.io/resume_new.html"><img src="image/icon/resume_30.png" class="navicon" alt="Resume"></a></li>
-            </ul>
-        </div>
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="copyright">
+				<li>Miffy Chen &copy; 2019</li><li>Last updated: 2019/02/13</li>
+			</ul>
+		</footer>
 
-        <h1>Miffy Chen</h1>
+	</div>
 
-        <div class="directory">
-            <div class="dir_title">Directory:</div>
+	<!-- Scripts -->
+	<script>
+		if ('addEventListener' in window) {
+			window.addEventListener('load', function () {
+				document.body.className = document.body.className.replace(/\bis-preload\b/, '');
+			});
+			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+		}
+	</script>
 
-            <img src="image/icon/github_30.png" class="dir_icon" alt="GitHub">
-            <a href="https://github.com/miffycs/">GitHub:</a>
-                <div class="dir_des">Repositories of mid to large size scaled projects.</div></br>
-            <img src="image/icon/codepen.png" class="dir_icon" alt="Codepen">
-            <a href="https://codepen.io/miffychen/">Codepen:</a>
-                <div class="dir_des">Web related mini-projects.</div></br>
-            <img src="image/icon/linkedin_30.png" class="dir_icon" alt="LinkedIn">
-            <a href="https://www.linkedin.com/in/miffychen/">LinkedIn:</a>
-                <div class="dir_des">Professional involvements.</div></br>
-            <!-- <img src="image/icon/resume_30.png" class="dir_icon" alt="Resume (web)">
-            <a href="https://miffycs.github.io/resume.html">Resume (web)</a></br>
-            <img src="image/icon/download.png" class="dir_icon" alt="Resume (download)">
-            <a href="https://miffycs.github.io/resume_preview.html">Resume (download)</a></br> -->
-            <img src="image/icon/resume_30.png" class="dir_icon" alt="Resume">
-            <a href="https://miffycs.github.io/resume_new.html">Resume:</a>
-                <div class="dir_des">Preview & download.</div></br>
-        </div>
+	<script>
+		var slideIndex = 0;
+		showSlides(slideIndex);
 
-        <div class="construction">
-            <br>
-            Web server is currently down & being fixed...<br>
-            Meanwhile, please see screenshot of the original website below
-        </div>
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {
+				slideIndex = 1
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			setTimeout(showSlides, 3000); // Change image every 3 seconds
+		}
+	</script>
 
-    </div>
+	<script>
+		! function () {
+			function a(a, b, c) {
+				return a.getAttribute(b) || c
+			}
 
-    <div class="footer">
-        <br><br><br>
-    </div>
+			function b(a) {
+				return document.getElementsByTagName(a)
+			}
 
-    <img src = "image/welcome.png" style="border: none; width: 100%;">
+			function c() {
+				var c = b("script"),
+					d = c.length,
+					e = c[d - 1];
+				return {
+					l: d,
+					z: a(e, "zIndex", -1),
+					o: a(e, "opacity", 0.6),
+					c: a(e, "color", "174, 128, 252"),
+					n: a(e, "count", 200)
+				}
+			}
 
-    <div class="footer">
-        <br><br><br>
-    </div>
+			function d() {
+				f = i.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth, g = i.height =
+					window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+			}
 
-    <div class="last_updated">
-        Last updated: 2019/01/12
-    </div>
-
-    <!-- cursor animation -->
-    <script type="text/javascript" src="js/cursor_particles.js"></script>
+			function e() {
+				l.clearRect(0, 0, f, g);
+				var a, b, c, d, i, k;
+				p.forEach(function (e, m) {
+					for (e.x += e.xa, e.y += e.ya, e.xa *= e.x > f || e.x < 0 ? -1 : 1, e.ya *= e.y > g || e.y < 0 ? -1 : 1, l.fillRect(
+							e.x - .5, e.y - .5, 1, 1), b = m + 1; b < h.length; b++) a = h[b], null !== a.x && null !== a.y && (d = e.x -
+						a.x, i = e.y - a.y, k = d * d + i * i, k < a.max && (a === o && k >= a.max / 2 && (e.x -= .03 * d, e.y -= .03 *
+							i), c = (a.max - k) / a.max, l.beginPath(), l.lineWidth = c / 2, l.strokeStyle = "rgba(" + j.c + "," + (c +
+							.2) + ")", l.moveTo(e.x, e.y), l.lineTo(a.x, a.y), l.stroke()))
+				}), m(e)
+			}
+			var f, g, h, p, q, r, s, t, u, i = document.createElement("canvas"),
+				j = c(),
+				k = "c_n" + j.l,
+				l = i.getContext("2d"),
+				m = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window
+				.oRequestAnimationFrame || window.msRequestAnimationFrame || function (a) {
+					window.setTimeout(a, 1e3 / 45)
+				},
+				n = Math.random,
+				o = {
+					x: null,
+					y: null,
+					max: 2e4
+				};
+			for (i.id = k, i.style.cssText = "position:fixed;top:0;left:0;z-index:" + j.z + ";opacity:" + j.o, b("body")[0].appendChild(
+					i), d(), window.onresize = d, window.onmousemove = function (a) {
+					a = a || window.event, o.x = a.clientX, o.y = a.clientY
+				}, window.onmouseout = function () {
+					o.x = null, o.y = null
+				}, p = [], q = 0; j.n > q; q++) r = n() * f, s = n() * g, t = 2 * n() - 1, u = 2 * n() - 1, p.push({
+				x: r,
+				y: s,
+				xa: t,
+				ya: u,
+				max: 6e3
+			});
+			h = p.concat([o]), setTimeout(function () {
+				e()
+			}, 100)
+		}()
+	</script>
 
 </body>
 
