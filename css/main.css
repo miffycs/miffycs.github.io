@@ -270,7 +270,7 @@
 
 /* Form */
 
-	form {
+	/* form {
 		margin: 0 0 1.5em 0;
 	}
 
@@ -510,7 +510,7 @@
 	:-ms-input-placeholder {
 		color: #616f77 !important;
 		opacity: 1.0;
-	}
+	} */
 
 /* Icon */
 
@@ -534,7 +534,7 @@
 		}
 
 /* List */
-
+/*
 	ol {
 		list-style: decimal;
 		margin: 0 0 1.5em 0;
@@ -581,10 +581,10 @@
 
 		dl dd {
 			margin-left: 1.5em;
-		}
+		} */
 
 /* Actions */
-
+/*
 	ul.actions {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -703,7 +703,7 @@
 							margin-left: -0.5rem;
 						}
 
-		}
+		} */
 
 /* Icons */
 
@@ -777,7 +777,7 @@
 		}
 
 /* Button */
-
+/*
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -865,7 +865,7 @@
 		.button:disabled {
 			pointer-events: none;
 			opacity: 0.5;
-		}
+		} */
 
 /* Main */
 

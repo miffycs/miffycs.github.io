@@ -7,7 +7,7 @@
 	<meta name="author" content="Miffy Chen">
 	<meta name="description" content="Personal Portfolio">
 	<meta name="keywords" content="Miffy Chen, CS, Computer Science, Portfolio, Boston, software engineer, software, engineer, full-stack, full stack, web design, web developer, freelance, for hire">
-	<meta http-equiv="refresh" content="120">
+	<!-- meta http-equiv="refresh" content="30" (refresh every 30 seconds)-->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- meta viewport behavior -->
@@ -71,12 +71,16 @@
 			<header>
 				<span class="avatar">
 					<div class="slideshow-container">
+						<div class="mySlides fade"><img src="image/newindex/avatar_cat.png" style="max-width:122px"></div>
 						<div class="mySlides fade"><img src="image/newindex/avatar2.png" style="max-width:122px"></div>
-						<div class="mySlides fade"><img src="image/newindex/avatarcat.png" style="max-width:122px"></div>
-						<div class="mySlides fade"><img src="image/newindex/avatargoogle.gif" style="max-width:122px"></div>
+						<div class="mySlides fade"><img src="image/newindex/avatar_team.jpg" style="max-width:122px"></div>
+						<div class="mySlides fade"><img src="image/newindex/avatar_awards.jpg" style="max-width:122px"></div>
+						<div class="mySlides fade"><img src="image/newindex/avatar_google.gif" style="max-width:122px"></div>
 						<div class="mySlides fade"><img src="image/newindex/avatar2.png" style="max-width:122px"></div>
 					</div>
 					<div style="text-align:center">
+						<span class="dot"></span>
+						<span class="dot"></span>
 						<span class="dot"></span>
 						<span class="dot"></span>
 						<span class="dot"></span>
@@ -170,6 +174,7 @@
 				dots[i].className = dots[i].className.replace(" active", "");
 			}
 			slides[slideIndex - 1].style.display = "block";
+			// error on purpose to stop at last avatar photo
 			dots[slideIndex - 1].className += " active";
 			setTimeout(showSlides, 3000); // Change image every 3 seconds
 		}
@@ -194,7 +199,7 @@
 					z: a(e, "zIndex", -1),
 					o: a(e, "opacity", 0.6),
 					c: a(e, "color", "174, 128, 252"),
-					n: a(e, "count", 200)
+					n: a(e, "count", 100)
 				}
 			}
 
