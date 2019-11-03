@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Info -->
+    <meta charset="UTF-8">
+    <meta name="description" content="BU MET CS601 - Assignment 01">
+    <meta name="keywords" content="BU, MET, CS601, Assignment01, HTML">
+    <meta name="author" content="Miffy Chen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon -->
+    <!-- Title -->
+    <title>Miffy Chen ::: My Cats</title>
+    <!-- Stylesheets -->
+    <!-- Scripts -->
+</head>
+
+<body>
+
+    <!-- Requirement #3: Pages using new HTML5 structures -->
+
+    <header>
+        <!-- Requirment #7: Navigation Bar -->
+        <nav>
+            ***Navigation Bar*** &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="index.html">Biography</a> |
+            <a href="aboutme.html">About Me</a> |
+            <a href="mycats.html">My Cats</a>
+        </nav>
+        <!-- (using a table to style inline because we can't use CSS) -->
+        <table>
+            <tr>
+                <!-- Requirement #4: Image (please count this image as quota for this page) -->
+                <th><img src="assets/img/BU_Wordmark.svg" alt="BU logo" height="50"></th>
+                <th><span>&nbsp; BU MET CS601 - Assignment 1 (Biography)</span></th>
+            </tr>
+        </table>
+        <div class="assignment-due-date">
+            This is the <strong>"My Cats"</strong> page of my <strong>Assignment 1</strong> (due: <time datetime="2019-11-05T11:00">2019/11/05 06:00AM</time>).
+        </div>
+    </header>
+
+    <main>
+
+        <h1>My Cats</h1>
+
+        <section class="intro">
+            <p>
+                I am an animal lover, I have a dog back home who lives with my parents,<br />
+                and I've adopted cats from <a href="https://www.mspca.org/" target="_blank">MSPCA</a>, which is a local shelter here in Boston.
+            </p>
+        </section>
+
+        <!-- Requirement #4: Image -->
+        <!-- Requirement #8: Video Element -->
+        <section class="media">
+
+            <h2>Photos & Videos:</h2>
+            
+            <!-- using table to style photos because CSS not allowed, technically not styling, right? :) -->
+            <table>
+                <tr>
+                    <th><strong>Miru</strong></th>
+                    <th><strong>Kakashi</strong></th>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="assets/img/miru.jpg" alt="Miru" width="280" height="372" />
+                            <figcaption>This is Miru, she loves interrupting me when <em>she thinks</em> I'm not doing any important work.</figcaption>
+                        </figure>
+                    </td>
+                    <td>
+                        <figure>
+                            <img src="assets/img/kakashi.jpg" alt="Kakashi" width="210" height="372" />
+                            <figcaption>
+                                This is Kakashi, she was badly injured from a fight on the streets before she was brought to the shelter in critical condition.
+                                She's named after a <a href="https://naruto.fandom.com/wiki/Kakashi_Hatake" target="_blank">ninja character</a> from the Naruto comic books who's also injured in one eye.
+                            </figcaption>
+                        </figure>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <video controls>
+                            <source src="assets/vid/miru.mp4" type="video/mp4" />
+                            Your browser does not support the video tag!
+                        </video>
+                    </td>
+                    <td>
+                        <video controls>
+                            <source src="assets/vid/kakashi.mp4" type="video/mp4" />
+                            Your browser does not support the video tag!
+                        </video>
+                    </td>
+                </tr>  
+            </table>
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <details>
+            <summary>Copyright &copy; 2019 ::: Miffy Chen</summary>
+            All Rights Reserved. Click <a href="mailto:mchen15@bu.edu">here</a> to email me.<br />
+            Code validated with <a href="http://validator.w3.org">The W3C Markup Validation Service</a>.
+        </details>
+    </footer>
+
+</body>
+
+</html>
