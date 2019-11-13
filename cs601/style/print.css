@@ -1,0 +1,36 @@
+/* Three differences between web & print:
+ * 1) Navigation Bar is hidden
+ * 2) Course Title in header: margin modified
+ * 3) Video is hidden
+ * 4) Audio is hidden (but no audio on my website)
+ * 5) Image files are resized if they are too big
+ */
+
+@media print {
+
+    /* set page size and orientation */
+    @page {
+        size: 8.5in 11in portrait;
+        margin: 2cm;
+    }
+
+    /* leave out these elements */
+    header nav, video, audio {
+        display: none;
+    }
+
+    header .header_wrapper .course_title {
+        margin-top: 38px;
+    }
+
+    /* resize image */
+    img {
+        /* set size constrains */
+        max-width: 8in;
+        max-height: 10.5in;
+        /* keep aspect ratio */
+        width: auto;
+        height: auto;
+    }
+
+}

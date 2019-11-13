@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
+.container_album {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+/* 
+ * Polaroid Originals measures
+ * 7.894 x 7.6801 cm (photo area)
+ * 10.752 x 8.847 cm (total area) 
+ */
+.container_album .polaroid {
+    position: relative;
+    width: 221px;
+    height: 268.75px;
+    margin: 1rem;
+    background-color: rgba(245, 245, 245);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    transition: all .2s linear;
+}
+
+.polaroid:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.2);
+    transform: translate3D(0, -2px, 0);
+}
+
+.polaroid .film_wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 192px;
+    height: 197.25px;
+    background: rgb(10, 10, 10);
+}
+
+.film_wrapper img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 192px;
+    max-height: 197.25px;
+    width: auto;
+    height: auto;
+}
+
+.polaroid .caption {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
+
+/* responsive design */
+
+@media screen and (min-width: 600px) {
+    .card {
+        flex: 1 1 calc(50% - 2rem);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        flex: 1 1 calc(33% - 2rem);
+    }
+}

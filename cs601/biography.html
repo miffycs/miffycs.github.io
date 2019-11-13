@@ -13,31 +13,27 @@
     <!-- Title -->
     <title>Miffy Chen ::: Biography</title>
     <!-- Stylesheets -->
+    <!-- <link type="text/css" rel="stylesheet" href="style/reset.css"> -->
+    <link type="text/css" rel="stylesheet" href="style/web.css">
+    <link type="text/css" rel="stylesheet" href="style/print.css">
     <!-- Scripts -->
 </head>
 
 <body>
 
-    <!-- Requirement #3: Pages using new HTML5 structures -->
-
     <header>
-        <!-- Requirment #7: Navigation Bar -->
-        <nav>
-            ***Navigation Bar*** &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="index.html">Biography</a> |
-            <a href="aboutme.html">About Me</a> |
-            <a href="mycats.html">My Cats</a>
-        </nav>
-        <!-- (using a table to style inline because we can't use CSS) -->
-        <table>
-            <tr>
-                <!-- Requirement #4: Image (please count this image as quota for this page) -->
-                <th><img src="assets/img/BU_Wordmark.svg" alt="BU logo" height="50"></th>
-                <th><span>&nbsp; BU MET CS601 - Assignment 1 (Biography)</span></th>
-            </tr>
-        </table>
-        <div class="assignment-due-date">
-            This is the <strong>"Biography"</strong> (index) page of my <strong>Assignment 1</strong> (due: <time datetime="2019-11-05T11:00">2019/11/05 06:00AM</time>).
+        <div class="header_wrapper">
+            <div class="site_logo">
+                <img src="assets/img/BU_Wordmark.svg" alt="BU logo" height="50">
+            </div>
+            <div class="course_title">MET CS601</div>
+            <nav>
+                <ul>
+                    <li><a href="mypets.html">My Pets</a></li>
+                    <li><a href="biography.html">Biography</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -45,9 +41,7 @@
 
         <h1>Biography</h1>
 
-        <!-- Requirement #1: 2 paragraphs of text -->
-        <!-- Requirement #2: External Links -->
-        <section class="biography">
+        <section class="biography long_paragraphs">
             <p>
                 My name is <b>Miffy Chen</b>, I'm a part-time master's student in <abbr title="Boston University">BU</abbr>'s <u>Computer Science</u> program in the <abbr title="Metropolitan">MET</abbr> college.
                 I also went to BU for my undergraduate degree, which was in <u>Psychological and Brain Sciences</u>.
@@ -70,17 +64,14 @@
             </p>
         </section>
 
-        <section class="hint">
-            <h3>(navigate to other pages using the navigation bar at the top of the page!)</h3>
-        </section>
-
     </main>
     
     <footer>
         <details>
             <summary>Copyright &copy; 2019 ::: Miffy Chen</summary>
             All Rights Reserved. Click <a href="mailto:mchen15@bu.edu">here</a> to email me.<br />
-            Code validated with <a href="http://validator.w3.org">The W3C Markup Validation Service</a>.
+            Code validated with <a href="http://validator.w3.org">The W3C Markup Validation Service</a>.<br />
+            Code validated with <a href="https://jigsaw.w3.org/css-validator/">The CSS Validation Service</a>.
         </details>
     </footer>
 
