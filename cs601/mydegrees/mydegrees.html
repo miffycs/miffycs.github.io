@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Info -->
+    <meta charset="UTF-8">
+    <meta name="description" content="BU MET CS601 - Assignment 05">
+    <meta name="keywords" content="BU, MET, CS601, Assignment05, HTML">
+    <meta name="author" content="Miffy Chen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon -->
+    <!-- Title -->
+    <title>My Degrees</title>
+    <!-- Stylesheets -->
+    <style>
+        body {
+            width: 100%;
+            background: radial-gradient(circle, #4dbd769c 0%, #3c888f93 100%);
+        }
+        .my_degrees {
+            width: 60%;
+            border: 3px solid #000000;
+        }
+        .my_degrees th, .my_degrees td {
+            border: 1px solid #000000;
+            padding: 2px;
+        }
+        .my_degrees th {
+            background-color: rgb(204, 0, 0);
+            color: #ffffff;
+        }
+
+        .my_degrees tr:hover {
+            background-color: #dddddd;
+        }
+    </style>
+    <!-- Scripts -->
+</head>
+
+<body>
+
+    <button id="button">Click here to see my degrees!</button>
+
+    <script>
+
+        // handle button onclick actions
+        document.getElementById("button").onclick = () => {
+            const url = "https://gist.githubusercontent.com/miffycs/acb78bdedca7aa2eb915392242492401/raw/5034a52e6dcb34c88cdbc2bc536d90ef599e187a/my_degrees.json";
+            makeRequest(url);
+        }
+
+        // takes url, creates XMLHttpRequest to fetch data
+        function makeRequest(url) {
+
+            let xmlhttp = new XMLHttpRequest();
+
+            if (!xmlhttp) {
+                alert("Cannot create an XMLHTTP instance");
+                return false;
+            }
+            
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status === 200) {
+                    let dataObj = JSON.parse(this.responseText);
+                    let my_degrees = dataObj.my_degrees;
+
+                    // [optional] check data through console.log
+                    // printLogs(my_degrees);
+
+                    // append data in table format
+                    appendData(my_degrees);
+                }
+            };
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send();
+        }
+
+        // append data fetched in table format
+        function appendData(data) {
+
+            // data passed in
+            const degrees = data;
+            // key legends
+            const keys = ["Year conferred", "Type", "School", "Program/Major"];
+
+            // create table properties
+            let table = document.createElement('table');
+            let tableHead = document.createElement('thead');
+            let tableBody = document.createElement('tbody');
+
+            // header row
+            let headerRow = document.createElement('tr');
+            for (let i = 0; i < keys.length; i++) {
+                let cell = document.createElement('th');
+                cell.appendChild(document.createTextNode(keys[i]));
+                headerRow.appendChild(cell);
+            }
+            tableHead.appendChild(headerRow);
+            table.appendChild(tableHead);
+
+            // body rows
+            degrees.forEach(entry => {
+                let row = document.createElement('tr');
+                for (let i = 0; i < keys.length; i++) {
+                    let cell = document.createElement('td');
+                    cell.appendChild(document.createTextNode(entry.degree[keys[i]]));
+                    row.appendChild(cell);
+                }
+                tableBody.appendChild(row);
+            });
+            table.appendChild(tableBody);
+
+            // add table to body
+            table.setAttribute("class", "my_degrees");
+            document.body.appendChild(table);
+            
+            // hide button
+            document.getElementById("button").style.visibility = 'hidden';
+        };
+
+        // check fetched data using console.log
+        function printLogs(my_degrees) {
+            for (let i = 0; i < my_degrees.length; i++) {
+                console.log(my_degrees[i]);
+                console.log(my_degrees[i].degree);
+                console.log(my_degrees[i].degree["School"]);
+                console.log(my_degrees[i].degree["Program/Major"]);
+                console.log(my_degrees[i].degree["Type"]);
+                console.log(my_degrees[i].degree["Year conferred"]);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

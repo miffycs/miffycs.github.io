@@ -1,0 +1,19 @@
+{
+    "my_degrees": [{
+            "degree": {
+                "School": "Boston University",
+                "Program/Major": "Psychological & Brain Sciences",
+                "Type": "BA",
+                "Year conferred": "2015"
+            }
+        },
+        {
+            "degree": {
+                "School": "Boston University",
+                "Program/Major": "Computer Science",
+                "Type": "MS",
+                "Year conferred": "2020"
+            }
+        }
+    ]
+}
