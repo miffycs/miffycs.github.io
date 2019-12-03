@@ -1,5 +1,6 @@
 {
-    "my_degrees": [{
+    "my_degrees": [
+        {
             "degree": {
                 "School": "Boston University",
                 "Program/Major": "Psychological & Brain Sciences",
