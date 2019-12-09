@@ -1,0 +1,36 @@
+body {
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    background: url("../assets/img/bu_campus_filtered.png") center no-repeat fixed;
+}
+
+a {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+p::selection {
+    background: #fff2a8;
+}
+
+main {
+    margin: auto 5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.page-title {
+    margin-top: 20px;
+    padding: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.paragraph p {
+    margin: 5%;
+    text-indent: 50px;
+    line-height: 2.2em;
+}
+

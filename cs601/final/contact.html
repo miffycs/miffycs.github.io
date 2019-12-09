@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Info -->
+    <meta charset="UTF-8">
+    <meta name="description" content="BU MET CS601 - Final Project">
+    <meta name="keywords" content="BU, MET, CS601, Final Project, HTML, CSS, JS, jQuery, Ajax">
+    <meta name="author" content="Miffy Chen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon -->
+    <!-- Title -->
+    <title>Template</title>
+    <!-- Stylesheets -->
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/contact.css">
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/contactFormSubmit.js"></script>
+</head>
+
+<body>
+
+    <nav></nav>
+
+    <main>
+
+        <div class="page-title">Contact Me</div>
+
+        <video autoplay muted loop id="video-bg">
+            <source src="assets/vid/coding_bg.mp4" type="video/mp4">
+        </video>
+        
+
+        <!-- <p class="required">* Required</p> -->
+
+        <div class="background-overlay">
+            <!-- <div class="container_flex"> -->
+                <!-- https://help.formspree.io/hc/en-us/articles/360013470814-AJAX-Forms -->
+                <!-- https://help.formspree.io/hc/en-us/articles/360012378333--Thank-You-redirect -->
+                <form name="contact_miffy" id="contact_miffy"
+                    action="https://formspree.io/m4jp6tp6@gmail.com"
+                    onsubmit="return submitForm()" method="POST">
+
+                    <!-- Hidden inputs -->
+                    <!-- Subject of email you will receive -->
+                    <input type="hidden" name="_subject" value="Message via CS601 contact form!">
+                    <!-- reCAPTCHA for spam check -->
+                    <input type="text" name="_gotcha" style="display: none">
+                    <!-- next action -->
+                    <input type="hidden" name="_next" value="https://miffychen.tech/index.html">
+
+                    <!-- <div class="row"> -->
+                        <div class="center">
+                            Got something to tell me?
+                        </div>
+                    <!-- </div> -->
+                    <div class="row">
+                        <div class="col-4 label">
+                            <label for="name">Name: </label>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" id="name" name="name"
+                                placeholder="Name *"
+                                class="" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 label">
+                            <label for="email">Email: </label>
+                        </div>
+                        <div class="col-8">
+                            <input type="email" id="email" name="email"
+                                placeholder="Email address *"
+                                class="" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 label">
+                            <label for="message">Message: </label>
+                        </div>
+                        <div class="col-12">
+                            <textarea id="message" name="message"
+                            placeholder="Write your messages to me here *"
+                            required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 reset">
+                            <input type="reset" value="Reset">
+                        </div>
+                        <div class="col-6 submit">
+                            <input type="submit" id="submit" value="Submit">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="warning_invalid"></div>
+                        </div>
+                    </div>
+                </form>
+            <!-- </div> -->
+        </div>
+
+    </main>
+
+    <!-- <footer></footer> -->
+
+    <script src="js/loadPageAttributes.js"></script>
+
+</body>
+
+</html>

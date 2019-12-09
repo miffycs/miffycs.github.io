@@ -1,0 +1,95 @@
+video {
+    max-width: initial;
+}
+
+#video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -99;
+}
+
+.center {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.page-title {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.background-overlay {
+    margin: 0 auto;
+    padding: 40px;
+    width: 500px;
+    min-height: 420px;
+    
+    background: rgba(255, 255, 255, 0.8);
+    
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+/* check grid */
+/* [class*="row"],
+[class*="col-"] {
+    border: 1px solid red;
+    background-color: yellow;
+} */
+
+.label {
+    margin-top: 2px;
+    padding-left: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 90%;
+    margin: 10px;
+    padding: 0 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+
+textarea {
+    width: 96%;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+
+input[type="reset"],
+input[type="submit"] {
+    width: 90%;
+    margin: 10px;
+    padding: 12px 0;
+    border: none;
+    background-color: #555555;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.warnings {
+    width: 90%;
+    margin: 10px auto;
+    padding: 0;
+    text-align: center;
+
+    color: rgb(255, 0, 0);
+    font-family: 'PT Mono', monospace;
+    font-size: 14px;
+    line-height: 1.4em;
+}

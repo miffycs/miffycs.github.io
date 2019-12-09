@@ -1,0 +1,221 @@
+@import url(typography.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: url(../assets/img/prism_1200.png);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #222222;
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 50px;
+}
+
+code {
+    display: inline-block;
+    font-family: 'Consolas';
+    background: rgba(255, 255, 255, 0.5);
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.container {
+    max-width: 700px;
+    background: #ffffff;
+    margin: 0px auto 0px;
+    box-shadow: 1px 1px 2px #d9d9d9;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.header .full-name {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 4px #eeeeee;
+    margin-bottom: 5px;
+}
+
+.header .first-name {
+    font-weight: 600;
+}
+
+.header .last-name {
+    font-weight: 400;
+}
+
+.header .contact-info {
+    margin-bottom: 20px;
+}
+
+.header .email,
+.header .phone {
+    color: #999999;
+    font-weight: 300;
+}
+
+.header .separator {
+    height: 10px;
+    display: inline-block;
+    border-left: 2px solid #999999;
+    margin: 0px 10px;
+}
+
+.header .position {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+.details {
+    line-height: 20px;
+}
+
+.details .section {
+    margin-bottom: 40px;
+}
+
+.details .section:last-of-type {
+    margin-bottom: 0px;
+}
+
+.details .section__title {
+    letter-spacing: 2px;
+    color: #54AFE4;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.details .section__list-item {
+    margin-bottom: 20px;
+}
+
+.details .section__list-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.details .left,
+.details .right {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.details .left {
+    width: 74%;
+}
+
+.details .right {
+    /* text-align: right; */
+    width: 25%;
+    font-size: 13.5px;
+}
+
+.details .name {
+    font-weight: bold;
+}
+
+.details .degree,
+.details .job_title {
+    /* font-style: italic; */
+    letter-spacing: -0.4px;
+    font-style: oblique;
+    margin-left: 5px;
+    /* font-family: 'Book Antiqua'; */
+}
+
+.details .desc {
+    margin-top: 2px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-size: 13px;
+}
+
+.details .classlist {
+    padding-left: 1em;
+    font-size: 11.5px;
+}
+
+.details .classlist li {
+    float: left;
+    list-style-position: inside;
+    list-style-type: disc;
+    margin-right: 1em;
+}
+
+.details .classlist_first {
+    float: left;
+    list-style-position: inside;
+    list-style-type: none;
+    margin-right: 1em;
+}
+
+.details .skills {
+    margin-bottom: 20px;
+}
+
+/* .details .skills .left {
+  width: 20%;
+  padding-right: -10px;
+}
+.details .skills .right {
+  width: 35%;
+  padding-left: -20px;
+}
+.details .skills .lefttt {
+  width: 32%;
+} */
+.details .skills .name {
+    font-weight: bold;
+}
+
+.details .skills .desc {
+    margin-top: 2px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+}
+
+.details .skills table,
+th,
+td {
+    border: 0px;
+    border-collapse: collapse;
+}
+
+.details .skills li {
+    margin-left: 5px;
+    margin-right: 10px;
+    /* padding-right: -2em; */
+}
+
+.details .skills li span {
+    /* position:relative;
+    left:-0.5em; */
+}
+
+.clear {
+    clear: both;
+    margin-bottom: 20px;
+}
+
+
+
+
+footer,
+footer a {
+    color: #ffffff;
+}

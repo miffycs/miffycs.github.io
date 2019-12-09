@@ -1,0 +1,67 @@
+{
+    "header": {
+        "name": {
+            "first": "Miffy",
+            "last": "Chen"
+        },
+        "contact": {
+            "email": "mchen15@bu.edu",
+            "phone": "425-246-3718",
+            "website": "https://miffychen.tech/"
+        }
+    },
+    "education": [{
+            "name": "Boston University",
+            "degree": "Masters of Science in Computer Science",
+            "location": "Boston, MA",
+            "duration": "Sept. 2017 – Current",
+            "courses": [
+                "Software Engineering",
+                "Data Structures",
+                "Algorithms",
+                "Computer Architecture",
+                "Computer Networks"
+            ]
+        },
+        {
+            "name": "Boston University",
+            "degree": "Bachelor of Arts in Psychological & Brain Sciences",
+            "location": "Boston, MA",
+            "duration": "Sep 2011 - May 2015",
+            "courses": [
+                "Independent Research",
+                "Experiment Design",
+                "Family Violence",
+                "Psychopathology",
+                "Drugs & Behavior",
+                "Statistics",
+                "Emerging Tech. in Education",
+                "Communications in Education & Human Service Organizations"
+            ]
+        }
+    ],
+    "skills": {
+        "languages": [],
+        "frameworks": [],
+        "tools": []
+    },
+    "experience": [{
+        "company": "",
+        "title": "",
+        "loc": "",
+        "duration": "",
+        "desc": []
+    }],
+    "hackathons": [{
+        "organizer": "",
+        "loc": "",
+        "title": "",
+        "duration": "",
+        "desc": []
+    }],
+    "projects": [{
+        "name": "",
+        "duration": "",
+        "desc": ""
+    }]
+}
