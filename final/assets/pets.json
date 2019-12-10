@@ -1,0 +1,40 @@
+{
+    "pets": [
+        {
+            "pet": {
+                "id": "miru-",
+                "url": "assets/img/pets/miru/",
+                "alt": "Miru",
+                "caption": "Miru",
+                "num": 6
+            }
+        },
+        {
+            "pet": {
+                "id": "kakashi-",
+                "url": "assets/img/pets/kakashi/",
+                "alt": "Kakashi",
+                "caption": "Kakashi",
+                "num": 7
+            }
+        },
+        {
+            "pet": {
+                "id": "popo-",
+                "url": "assets/img/pets/popo/",
+                "alt": "Popo",
+                "caption": "Popo",
+                "num": 4
+            }
+        },
+        {
+            "pet": {
+                "id": "lucky-",
+                "url": "assets/img/pets/lucky/",
+                "alt": "Lucky",
+                "caption": "Lucky",
+                "num": 3
+            }
+        }
+    ]
+}

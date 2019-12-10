@@ -1,0 +1,142 @@
+.profile_card {
+    display: block;
+}
+
+.profile_card .hint {
+    margin-top: 15px;
+    text-align: center;
+    animation: 2s pulse 10;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.container_profile_card {
+    position: relative;
+    margin: 20px auto;
+    height: 250px;
+    width: 500px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container_profile_card .card {
+    position: relative;
+    height: 250px;
+}
+
+.card:hover .card_hidden {
+    display: block;
+    top: 0;
+    left: 0;
+    background: rgba(217, 14, 14, 0.85);
+    color: rgba(255, 255, 255, 1);
+}
+
+.card_left img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    height: 100%;
+    width: auto;
+    float: left;
+    transition: all 0.8s;
+}
+
+.card_left .card_hidden {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 3% 4%;
+    background: rgba(245, 110, 100, 0.85);
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.5s ease-in-out;
+}
+
+.card_hidden .name {
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.card_hidden .title {
+    margin: 0;
+    margin-right: 10px;
+    padding: 0 0 13px 0;
+    width: 90%;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.card_hidden .title span {
+    position: absolute;
+    top: 55px;
+    right: 20px;
+}
+
+.card_hidden hr {
+    font-size: 8px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.card_hidden .description {
+    padding-top: 13px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.card_right {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: inherit;
+    padding: 20px 20px 20px 30px;
+    /* nintendo blue background: rgb(6, 186, 221); */
+    background: rgb(5, 154, 229);
+    color: rgb(230, 230, 230);
+    font-family: 'Lato', sans-serif;
+}
+
+.right_wrapper .row {
+    padding: 5px;
+}
+
+.right_wrapper .name {
+    font-size: 24px;
+    /* font-weight: 700; */
+    margin: 20px auto;
+    padding-left: 40px;
+}
+
+.right_wrapper img {
+    height: 20px;
+}
+
+.right_wrapper .link {
+    font-size: 17px;
+}
+
+.link a {
+    text-decoration: underline;
+    /* color: rgb(34, 31, 36); */
+    color: rgb(200, 200, 200);
+}
+
+.right_wrapper .col-3 {width: 25%;}
+.right_wrapper .col-9 {width: 75%;}
+.right_wrapper .col-12 {width: 100%;}

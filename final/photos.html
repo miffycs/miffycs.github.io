@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Info -->
+    <meta charset="UTF-8">
+    <meta name="description" content="BU MET CS601 - Final Project">
+    <meta name="keywords" content="BU, MET, CS601, Final Project, HTML, CSS, JS, jQuery, Ajax">
+    <meta name="author" content="Miffy Chen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon -->
+    <!-- Title -->
+    <title>Miffy Chen ::: Photo Album</title>
+    <!-- Stylesheets -->
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/modal.css">
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <nav></nav>
+
+    <main>
+
+        <div class="page-title">Photo Album</div>
+
+        <section class="intro">
+            <p>
+                I love animals and I've adopted both cats and dogs, so figured I'd make them
+                the central theme of my photo album.
+            </p>
+            <p>
+                I love both dogs and cats, I have a dog back home who lives with my parents,
+                and I've adopted cats from <a href="https://www.mspca.org/" target="_blank">MSPCA</a>,
+                which is a local shelter here in Boston.
+            </p>
+            <p>
+                My cats are named <strong>Miru</strong>, <strong>Popo</strong>, and <strong>Kakashi</strong>.
+                My dog back home is named <strong>Lucky</strong>.
+            </p>
+        </section>
+
+        <!-- The Modal -->
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modalImg" class="modal-content">
+            <div id="caption"></div>
+        </div>
+
+        <!-- have both JS and jQuery versions of writing to DOM -->
+        <section id="photos" class="photos">
+        </section>
+
+        <section class="videos">
+            <section class="container_flex">
+                <div class="video_player">
+                    <video controls>
+                        <source src="assets/vid/miru.mp4" type="video/mp4" />
+                        Your browser does not support the video tag!
+                    </video>
+                </div>
+
+                <div class="video_player">
+                    <video controls>
+                        <source src="assets/vid/kakashi.mp4" type="video/mp4" />
+                        Your browser does not support the video tag!
+                    </video>
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="js/loadPageAttributes.js"></script>
+
+    <!-- JS Version -->
+    <!-- <script src="js/petsAlbum_js.js"></script> -->
+
+    <!-- jQuery Version -->
+    <script src="js/petsAlbum_jquery.js"></script>
+    <script src="js/loadModal.js"></script>
+
+</body>
+
+</html>
