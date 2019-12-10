@@ -13,6 +13,7 @@
     <!-- Title -->
     <title>Miffy Chen ::: Resume</title>
     <!-- Stylesheets -->
+    <link type="text/css" rel="stylesheet" href="css/grid.css">
     <link type="text/css" rel="stylesheet" href="css/page_attr.css">
     <link type="text/css" rel="stylesheet" href="css/resume.css">
     <!-- Scripts -->
@@ -22,277 +23,43 @@
 <body>
 
     <nav></nav>
+    
+    <!-- <div class="page-title">Page Title</div> -->
 
-    <div class="container">
-
-        <div class="header">
-
-            <div class="full-name">
-                <span class="first-name">Miffy</span>
-                <span class="last-name">Chen</span>
-            </div>
-
+    <div id="page" class="container">
+        
+        <section id="header" class="header">
+            <div id="full-name" class="full-name"></div>
             <div class="clear"></div>
-
-            <div class="contact-info">
-                <span class="email">Email: </span>
-                <span class="email-val">mchen15@bu.edu</span>
+            <div id="contact" class="contact">
+                <span id="email">Email: </span>
                 <span class="separator"></span>
-                <span class="phone">Phone: </span>
-                <span class="phone-val">(+1) 425-246-3718</span>
+                <span id="phone">Phone: </span>
+                <span class="separator"></span>
+                <span id="website">Website: </span>
             </div>
+        </section>
 
-        </div>
+        <section id="education">
+            <div class="title">Education</div>
+        </section>
 
-        <div class="details">
+        <section id="skills">
+            <div class="title">Skills</div>
+        </section>
 
-            <div class="section">
-                <div class="section__title">Education</div>
-                <div class="section__list">
-                    <div class="section__list-item">
-                        <div class="left">
-                            <div class="name">Boston University</div>
-                            <div class="degree">Masters of Science in Computer Science</div>
-                        </div>
-                        <div class="right">
-                            <div class="loc">Boston, MA</div>
-                            <div class="duration">Sept. 2017 – Current</div>
-                        </div>
-                        <div class="classlist">
-                            <ul class="classlist">
-                                <div class="classlist_first">Software Engineering</div>
-                                <li>Data Structures</li>
-                                <li>Algorithms</li>
-                                <li>Computer Architecture</li>
-                                <li>Computer Networks</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="clear"></div>
-                <div class="section__list">
-                    <div class="section__list-item">
-                        <div class="left">
-                            <div class="name">Boston University</div>
-                            <div class="degree">Bachelor of Arts in Psychological & Brain Sciences</div>
-                        </div>
-                        <div class="right">
-                            <div class="loc">Boston, MA</div>
-                            <div class="duration">Sep 2011 - May 2015</div>
-                        </div>
-                        <div class="classlist">
-                            <ul class="classlist">
-                                <div class="classlist_first">Independent Research</div>
-                                <li>Experiment Design</li>
-                                <li>Family Violence</li>
-                                <li>Psychopathology</li>
-                                <li>Drugs & Behavior</li>
-                                </br>
-                                <div class="classlist_first">Statistics</div>
-                                <li>Emerging Tech. in Education</li>
-                                <li>Communications in Education & Human Service Organizations</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <section id="experience">
+            <div class="title">Experience</div>
+        </section>
 
-            </div>
-
-            <div class="clear"></div>
-
-            <div class="section">
-                <div class="section__title">Skills</div>
-                <div class="skills">
-                    <table style="width:100%">
-                        <tr>
-                            <td>
-                                <div class="name">Language Proficiencies:</div>
-                            </td>
-                            <td>
-                                <div class="name"> Programming Languages / Skills:</div>
-                            </td>
-                            <td>
-                                <div class="name">Research Training:</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul style="margin-left:20px">
-                                    <li>English</li>
-                                    <li>Chinese, Mandarin</li>
-                                    <li>Japanese</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <div class="desc">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <li><span>HTML</span></li>
-                                            </td>
-                                            <td>
-                                                <li><span>CSS</span></li>
-                                            </td>
-                                            <td>
-                                                <li><span>JavaScript</span></li>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <li><span>Java</span></li>
-                                            </td>
-                                            <td>
-                                                <li><span>SQL</span></li>
-                                            </td>
-                                            <td>
-                                                <li><span>VB.NET</span></li>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <li><span>C</span></li>
-                                            </td>
-                                            <td>
-                                                <li><span>C++</span></li>
-                                            </td>
-                                            <td>
-                                                <li><span>Python</span></li>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </td>
-                            <td>
-                                <ul style="margin-left:20px">
-                                    <li>Human Subjects Training</li>
-                                    <li>Subject Interview</li>
-                                    <li>SPSS, SAS</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="section__title">Experience</div>
-                <div class="section__list">
-                    <div class="section__list-item">
-                        <div class="left">
-                            <div class="name">Wyzant</div>
-                            <div class="job_title">Independent Tutor</div>
-                        </div>
-                        <div class="right">
-                            <div class="loc">(Online)</div>
-                            <div class="duration">July 2018 - Current</div>
-                        </div>
-                        <div class="desc">
-                            <ul>
-                                <li>Tutored 150+ hours of Java, Python, HTML/CSS/JavaScript, and general CS fundamentals
-                                    to
-                                    many students, both in-person and online, ranging from adults to children
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="section__list-item">
-                        <div class="left">
-                            <div class="name">CitySpade Inc.</div>
-                            <div class="job_title">Real Estate Sales Manager, (Interim) Marketing Director</div>
-                        </div>
-                        <div class="right">
-                            <div class="loc">(Boston, MA)</div>
-                            <div class="duration">Dec. 2017 – Aug. 2018</div>
-                        </div>
-                        <div class="desc">
-                            <ul>
-                                <li>Recruited due to excellent performance as Rental & Sales Agent at Preview Properties </li>
-                                <li>
-                                    Trained new agents in advertising properties, generating leads, approaching potential clients, preparing for and showing properties, and the paperwork process following a closing
-                                </li>
-                                <li>Coordinated with property management companies to ensure a smooth working
-                                    relationship
-                                </li>
-                                <li>Advised clients on market conditions, prices, trends, mortgages, legal requirements
-                                    and
-                                    related matters
-                                </li>
-                                <li>Maintained and updated the internal database as needed</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="section__list-item">
-                        <div class="left">
-                            <div class="name">Compal Electronics</div>
-                            <div class="job_title">Sales & Marketing Intern</div>
-                        </div>
-                        <div class="right">
-                            <div class="loc">(Taipei, Taiwan)</div>
-                            <div class="duration">Oct. 2016 – Mar. 2017</div>
-                        </div>
-                        <div class="desc">
-                            <ul>
-                                <li>Worked closely with a team of 3-5 members on project biddings, acting as ODM
-                                    suppliers
-                                </li>
-                                <li>Gathered and analyzed data on markets, trends, competitors, clients, and specific
-                                    products
-                                </li>
-                                <li>Compared findings to data given by big research firms such as IDC & Gartner</li>
-                                <li>Worked with Research & Development and Procurement to draft Specification & Cost
-                                    Proposals
-                                </li>
-                                <li>Prepared status reports for weekly staff meetings, and assisted in presenting
-                                    findings
-                                    and proposals to clients
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="section__list-item">
-                        <div class="left">
-                            <div class="name">Family Justice Center of Boston (The E.V.A. Center)</div>
-                            <div class="job_title">Senior Student Researcher</div>
-                        </div>
-                        <div class="right">
-                            <div class="loc">(Boston, MA)</div>
-                            <div class="duration">Oct. 2013 – May 2015</div>
-                        </div>
-                        <div class="desc">
-                            <ul>
-                                <li>Developed coding guidelines on SPSS drawn from large collections of self-compiled
-                                    data,
-                                    collected through verbal interviews and written case files, and analyzed them for
-                                    possible connections and/or correlations
-                                </li>
-                                <li>Authored a 30-paged paper on the relationship developments in dysfunctional
-                                    families,
-                                    and its possible relation to the entrance of human trafficking. Paper included
-                                    in-depth
-                                    literature review, data & analysis, & future research directions
-                                </li>
-                                <li>Collaborated with local advocacy groups to raise awareness and support for victims
-                                    of
-                                    human trafficking
-                                </li>
-                                <li>Supervised a team of younger members to produce high-quality presentations for
-                                    governmental & judicial authorities
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
+        <section id="hackathons">
+            <div class="title">Hackathons</div>
+        </section>
     </div>
 
+    <footer id="footer"></footer>
 
-    <footer></footer>
+    <script src="js/resume.js"></script>
 
     <script src="js/loadPageAttributes.js"></script>
 

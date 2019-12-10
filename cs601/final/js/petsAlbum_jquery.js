@@ -1,5 +1,5 @@
 // handle button onclick actions
-const url_pets = "https://gist.githubusercontent.com/miffycs/277dc656f33f5b900a5f893135953d51/raw/fcd8156b513d551744c42104b8bf218598fdc28f/pets.json";
+const url_pets = "https://miffychen.tech/cs601/final/assets/pets.json";
 makeRequest(url_pets);
 
 // takes url, creates XMLHttpRequest to fetch data
@@ -32,65 +32,34 @@ function appendData(data) {
     // create album
     let container_album = $('<div/>', { class: 'container_album', id: 'pet-album' });
 
-    // let container_wrapper = $('<div/>', { class: 'container_wrapper' });
-    
-
     pets.forEach(pet => {
         pet = pet.pet;
 
         for (let i = 1; i <= pet["num"]; i++) {
 
-            // let polaroid = $('<div/>', { class: 'polaroid' });
-            let polaroid = $('<div/>', { class: 'polaroid', id: `polaroid-${pet["id"]}0${i}` });
-            let fig = $('<figure/>');
+            let polaroid = $('<div/>', { class: 'polaroid', id: `plr-${pet["id"]}0${i}` });
+            let figure = $('<figure/>');
             let film_wrapper = $('<div/>', { class: 'film_wrapper' });
             let figcaption = $('<figcaption/>', { class: 'caption' });
 
             $(film_wrapper).append(
                 $('<img>', {
-                    id: `${pet["id"]}0${i}`,
+                    id: `img-${pet["id"]}0${i}`,
                     src: `${pet["url"]}0${i}.jpg`,
-                    alt: pet["alt"],
+                    alt: pet["alt"]
                 })
             );
 
             $(figcaption).append(`<p>${pet["caption"]}</p>`);
 
-            $(fig).append(film_wrapper);
-            $(fig).append(figcaption);
+            $(figure).append(film_wrapper);
+            $(figure).append(figcaption);
 
-            $(polaroid).append(fig);
+            $(polaroid).append(figure);
             $(container_album).append(polaroid);
         }
 
     });
 
     $("#photos").append(container_album);
-};
-
-
-window.onload = function() {
-
-    var modal = document.getElementById("myModal");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-
-    $("#pet-album").on("click", ".polaroid", function (event) {
-        console.log(this.id);
-        console.log(this.querySelector("img").id);
-
-        let img = this.querySelector("img");
-
-        modal.style.display = "block";
-        modalImg.src = img.src;
-        captionText.innerHTML = img.alt;
-    });
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
 };

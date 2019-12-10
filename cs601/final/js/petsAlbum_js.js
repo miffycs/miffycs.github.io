@@ -1,5 +1,5 @@
 // handle button onclick actions
-const url_pets = "https://gist.githubusercontent.com/miffycs/277dc656f33f5b900a5f893135953d51/raw/fcd8156b513d551744c42104b8bf218598fdc28f/pets.json";
+const url_pets = "https://miffychen.tech/cs601/final/assets/pets.json";
 makeRequest(url_pets);
 
 // takes url, creates XMLHttpRequest to fetch data
@@ -32,6 +32,7 @@ function appendData(data) {
     // create album
     let container_album = document.createElement('div');
     container_album.setAttribute("class", "container_album");
+    container_album.setAttribute("id", "pet-album");
 
     pets.forEach(pet => {
         pet = pet.pet;
@@ -40,13 +41,15 @@ function appendData(data) {
 
             let polaroid = document.createElement('div');
             polaroid.setAttribute("class", "polaroid");
+            polaroid.setAttribute("id", `plr-${pet["id"]}0${i}`);
 
-            let fig = document.createElement('figure');
+            let figure = document.createElement('figure');
 
             let film_wrapper = document.createElement('div');
             film_wrapper.setAttribute("class", "film_wrapper");
 
             let img = document.createElement('img');
+            img.setAttribute("id", `img-${pet["id"]}0${i}`);
             img.setAttribute("src", `${pet["url"]}0${i}.jpg`);
             img.setAttribute("alt", pet["alt"]);
 
@@ -61,10 +64,10 @@ function appendData(data) {
 
             figcaption.appendChild(p);
 
-            fig.appendChild(film_wrapper);
-            fig.appendChild(figcaption);
+            figure.appendChild(film_wrapper);
+            figure.appendChild(figcaption);
 
-            polaroid.appendChild(fig);
+            polaroid.appendChild(figure);
             container_album.appendChild(polaroid);
         }
 

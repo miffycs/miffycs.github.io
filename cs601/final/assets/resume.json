@@ -10,17 +10,20 @@
             "website": "https://miffychen.tech/"
         }
     },
-    "education": [{
+    "education": [
+        {
             "name": "Boston University",
             "degree": "Masters of Science in Computer Science",
             "location": "Boston, MA",
-            "duration": "Sept. 2017 – Current",
+            "duration": "Sept. 2017 – May 2020",
             "courses": [
-                "Software Engineering",
-                "Data Structures",
-                "Algorithms",
+                "Analysis of Algorithms",
+                "Computer Networks",
                 "Computer Architecture",
-                "Computer Networks"
+                "Operating Systems",
+                "Adv. Programming Techniques",
+                "Software Engineering",
+                "Software Quality, Testing, & Security Management"
             ]
         },
         {
@@ -41,27 +44,98 @@
         }
     ],
     "skills": {
-        "languages": [],
-        "frameworks": [],
-        "tools": []
+        "languages": [
+            "Java",
+            "C++",
+            "C",
+            "C#",
+            "Python",
+            "JavaScript"
+        ],
+        "frameworks": [
+            "React.js",
+            "Vue.js",
+            "Node.js",
+            "Spring-Boot"
+        ],
+        "tools": [
+            "Git",
+            "GitHub",
+            "Postman",
+            "Insomnia",
+            "Firebase",
+            "Amazon Web Services",
+            "Google Cloud",
+            "MS Azure"
+        ]
     },
-    "experience": [{
-        "company": "",
-        "title": "",
-        "loc": "",
-        "duration": "",
-        "desc": []
-    }],
-    "hackathons": [{
-        "organizer": "",
-        "loc": "",
-        "title": "",
-        "duration": "",
-        "desc": []
-    }],
-    "projects": [{
-        "name": "",
-        "duration": "",
-        "desc": ""
-    }]
+    "experience": [
+        {
+            "title": "CLOUD SOFTWARE ENGINEER",
+            "loc": "Olympus Scientific Solutions",
+            "duration": "Oct 2019 - Current",
+            "desc": [
+                "Still fairly new at the job, will update once I'm more experienced!"
+            ]
+        },
+        {
+            "title": "AWS TECHNICAL INTERN",
+            "loc": "Amazon (Boston Seaport)",
+            "duration": "June – Aug, 2019",
+            "desc": [
+                "Revamped an internal tool using AWS services including: S3, Amplify, SSO, Cognito, WAF & Shield, API Gateway, Lambda, SNS, CodeBuild, CodeCommit, CodePipeline, DynamoDB, CloudWatch, CloudTrail, and CloudFormation."
+            ]
+        },
+        {
+            "title": "SOFTWARE ENGINEERING INTERN",
+            "loc": "BrainCo Tech",
+            "duration": "Mar – May, 2019",
+            "desc": [
+                "A 'brain robotics' company focused on the practical usages of EEG headbands in training focus and relaxation for students and athletes, as well as reinventing AI-powered prosthetic arms for amputees.",
+                "Created cross-platform games / exercises in React.js and Node.js built on Electron.js.",
+                "Coordinated with the design team in drafting and implementing UI/UX mockup designs.",
+                "Updated the company website with Vue.js."
+            ]
+        }
+    ],
+    "hackathons": [
+        {
+            "organizer": "BOSTONHACKS",
+            "loc": "Boston University",
+            "title": "1st Place Best Hack Award",
+            "duration": "Nov 16-17, 2019",
+            "desc": [
+                "Rosetta Kart uses Bose Frames as a wearable game controller in a MarioKart inspired language learning app! In this demo, the player hears English instructions over the Frames, and steers the Karts with head tilts/turns to drive through blocks with Mandarin characters matching up to their English counterparts!"
+            ]
+        },
+        {
+            "organizer": "TECHTOGETHER",
+            "loc": "Boston University",
+            "title": "Winner of Microsoft Azure Champ Challenge",
+            "duration": "Mar 15-17, 2019",
+            "desc": [
+                "Built a ChatBot web app that checks up on grandparents (elderly) acting as a concerned grandchild, identifies early-on the potential health symptoms they may be exhibiting, encourages them to lead an active lifestyle, and stays connected to their families through help of social media.",
+                "Project created with Node.js and EJS, hosted using Azure’s Web App and DevOps services, connected to GitHub repository with a CI/CD pipeline on Azure.",
+                "Created 3D facial scans as stand-in grandchild during conversations using Apple’s ARKit and CoreML."
+            ]
+        },
+        {
+            "organizer": "HACK(H)ER413",
+            "loc": "UMass Amherst",
+            "title": "Winner of Best Use of Google Cloud Platform",
+            "duration": "Feb 09 - 10, 2019",
+            "desc": [
+                "Built a Machine Learning Model that identifies breed combinations of mix-bred dogs and cats to help raise adoption rates in animal shelters using Google Cloud AutoML Vision.",
+                "Achieved an accuracy rate of 97.04% with the custom-trained model, a 3.259% improvement from using the pre-trained model of Google Cloud Vision API.",
+                "Built a web UI with REST API that executes Serverless Application Scripts stored on Google Cloud Functions."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "",
+            "duration": "",
+            "desc": ""
+        }
+    ]
 }

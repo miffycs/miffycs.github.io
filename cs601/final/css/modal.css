@@ -26,8 +26,12 @@
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+}
+
+img#modalImg {
+    height: 70%;
+    width: auto;
+    max-height: 80vh;
 }
 
 /* Caption of Modal Image */
