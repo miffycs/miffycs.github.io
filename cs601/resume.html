@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Info -->
+    <meta charset="UTF-8">
+    <meta name="description" content="BU MET CS601 - Final Project">
+    <meta name="keywords" content="BU, MET, CS601, Final Project, HTML, CSS, JS, jQuery, Ajax">
+    <meta name="author" content="Miffy Chen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon -->
+    <!-- Title -->
+    <title>Miffy Chen ::: Resume</title>
+    <!-- Stylesheets -->
+    <link type="text/css" rel="stylesheet" href="css/grid.css">
+    <link type="text/css" rel="stylesheet" href="css/page_attr.css">
+    <link type="text/css" rel="stylesheet" href="css/resume.css">
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <nav></nav>
+    
+    <!-- <div class="page-title">Resume</div> -->
+
+    <!-- Show PDF version if screen is too small -->
+    <iframe src="https://drive.google.com/file/d/1hYkhWnNsv3Ryexm8D-tqINUadIQ2mL-a/preview"></iframe>
+
+    <!-- Show page version if screen is big enough -->
+    <!-- Resume details are loaded in from JSON and appended with jQuery -->
+    <div id="page" class="container">
+        
+        <section id="header" class="header">
+            <div id="full-name" class="full-name"></div>
+            <div class="clear"></div>
+            <div id="contact" class="contact">
+                <span id="email">Email: </span>
+                <span class="separator"></span>
+                <span id="phone">Phone: </span>
+                <span class="separator"></span>
+                <span id="website">Website: </span>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="title">Education</div>
+        </section>
+
+        <section id="skills">
+            <div class="title">Skills</div>
+        </section>
+
+        <section id="experience">
+            <div class="title">Experience</div>
+        </section>
+
+        <section id="hackathons">
+            <div class="title">Hackathons</div>
+        </section>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script src="js/resume.js"></script>
+
+    <script src="js/loadPageAttributes.js"></script>
+
+</body>
+
+</html>

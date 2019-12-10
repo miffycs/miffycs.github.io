@@ -1,0 +1,19 @@
+@import url(polaroid.css);
+
+.intro p {
+    margin: 2% 5%;
+    line-height: 1.5em;
+}
+
+.photos {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.videos {
+    margin-top: 20px;
+}
+
+.video_player {
+    display: inherit;
+}
