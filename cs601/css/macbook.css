@@ -121,8 +121,8 @@
   margin: 1% auto;
   color: rgb(155, 155, 155);
   text-align: center;
-  font-size: 2em;
-  animation: 3s pulse 10;
+  font-size: 1.4em;
+  /* animation: 3s pulse 1; */
 }
 
 @keyframes pulse {
