@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    background: url("../img/magellan-gradient-light.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 4em;
+}
+
+.center {
+    text-align: center;
+    margin: 5%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: row wrap;
+}
+
+.square {
+    margin: 4% 1.5%;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    width:"250"; height:"250";
+}
+
+.square img {
+    width:"250"; height:"250";
+}
