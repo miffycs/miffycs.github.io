@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
 body {
     background: url("../img/magellan-gradient-light.png");
@@ -7,7 +7,7 @@ body {
 }
 
 .title {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Silkscreen', cursive;
     font-size: 4em;
 }
 
